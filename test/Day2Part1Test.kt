@@ -1,8 +1,8 @@
 import org.junit.Test
 import org.junit.jupiter.api.Assertions.*
 
-class ThreeTest {
-    val three = Three()
+class Day2Part1Test {
+    val three = Day2_Part1()
     @Test
     fun shouldReturnAMapFromString() {
         val actualResult = three.stringToMap("aabbcde")

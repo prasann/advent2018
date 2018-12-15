@@ -1,4 +1,4 @@
-class Three {
+class Day2_Part1 {
     fun stringToMap(strToBeCoverted: String): MutableMap<Char, Int> {
         val resultMap = mutableMapOf<Char, Int>()
         strToBeCoverted.toCharArray().forEach {
