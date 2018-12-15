@@ -1,11 +1,6 @@
 class D02P1 {
-    fun stringToMap(strToBeCoverted: String): MutableMap<Char, Int> {
-        val resultMap = mutableMapOf<Char, Int>()
-        strToBeCoverted.toCharArray().forEach {
-            val occurence = resultMap.get(it) ?: 0
-            resultMap.put(it, occurence + 1)
-        }
-        return resultMap
+    fun stringToMap(strToBeCoverted: String): Map<Char, Int> {
+        return strToBeCoverted.groupingBy { it }.eachCount()
     }
 
     fun hasTwoChars(charMap: Map<Char, Int>): Boolean {
