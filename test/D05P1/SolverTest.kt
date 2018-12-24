@@ -9,7 +9,7 @@ internal class SolverTest {
   @Test
   internal fun shouldPrint() {
     val classUnderTest = Solver()
-    println(classUnderTest.run(hugeInput))
+    println(classUnderTest.runPart2(hugeInput))
   }
 
 }
